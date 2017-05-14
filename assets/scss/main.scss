@@ -1,0 +1,13 @@
+// Directorio de archivos SASS
+
+// Archivos base
+@import "helpers/functions";
+@import "helpers/variables";
+@import "helpers/mixins";
+
+@import "base/_base";
+@import "base/reset";
+
+@import "layout/header";
+
+@import "pages/home";
