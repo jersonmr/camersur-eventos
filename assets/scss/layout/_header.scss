@@ -1,0 +1,122 @@
+.header {
+  background-color: #fff;
+  display: flex;
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5em;
+    padding-bottom: 0;
+    @include media(sm) {
+      flex-wrap: nowrap;
+      justify-content: space-around;
+    }
+  }
+  &__logo {
+    @include media(sm) {
+      flex-basis: 50%;
+    }
+  }
+  &__acciones {
+    color: $azul-oscuro;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $montserrat-font;
+    font-size: 0.95em;
+    font-weight: 600;
+    width: 100%;
+    @include media(sm) {
+      flex-basis: 50%;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+    }
+    &__idioma {
+      margin: 0.25em auto;
+      @include media(md) {
+        width: 33%;
+      }
+      img {
+        margin-right: 0.5em;
+      }
+      a {
+        color: $azul-oscuro;
+        font-weight: bold;
+      }
+    }
+    &__registrarse {
+      margin: 0.25em 1em;
+      @include media(md) {
+        display: flex;
+        justify-content: center;
+        width: 33%;
+      }
+      a {
+        color: $azul-oscuro;
+        font-weight: bold;
+      }
+    }
+    &__login {
+      background: $azul-medio;
+      border-radius: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.25em auto;
+      padding: 0.5em;
+      @include media(md) {
+        padding: 0.25em;
+        width: 33%;
+      }
+      a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        margin-right: 0.75em;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          color: darken(#fff, 10%);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  &__sociales {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    a {
+      margin: 0 0.1em;
+    }
+    @include media(sm) {
+      justify-content: flex-end;
+      margin-top: -0.75em;
+      padding-right: 2em;
+    }
+  }
+  // Contenedor menu de navegacion y boton crear evento
+  .boton-menu {
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    background-color: transparent;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__navegacion {
+    border-bottom: 1px solid $azul-ligero;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+    @include media(md) {
+      justify-content: space-between;
+    }
+  }
+}
