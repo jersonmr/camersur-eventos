@@ -1,19 +1,19 @@
-header.header
-    .container
+header.header.py-3
+    .container.d-flex.flex-wrap.align-items-center
+
         //Logo + Seccion de registro y redes sociales
-        section.header__top
-            .header__logo
-                a(href="index.html", alt="Link a Eventos Camersur")
-                    img(src="images/logo-eventos.svg", alt="Logo Universidad Camersur")
-            .header__acciones
-                .header__acciones.header__acciones__idioma
-                    img(src="images/bandera-espana.png", alt="Español")
-                    a(href="#") es
-                .header__acciones.header__acciones__registrarse
-                    a(href="#") REGISTRARSE
-                .header__acciones.header__acciones__login
-                    a(href="#") Iniciar sesión
-                    img(src="images/icono-usuario.png", alt="Iniciar sesión")
+        .header__logo
+            a(href="index.html", alt="Link a Eventos Camersur")
+                img(src="images/logo-eventos.svg", alt="Logo Universidad Camersur")
+        .header__acciones
+            .header__acciones.header__acciones__idioma
+                img(src="images/bandera-espana.png", alt="Español")
+                a(href="#") es
+            .header__acciones.header__acciones__registrarse
+                a(href="#") REGISTRARSE
+            .header__acciones.header__acciones__login
+                a(href="#") Iniciar sesión
+                img(src="images/icono-usuario.png", alt="Iniciar sesión")
 
         // Iconos redes sociales
         section.header__sociales
@@ -28,21 +28,22 @@ header.header
             a(href="#")
                 img(src="images/icono-rss.png", alt="Icono de canal RSS")
 
-        .row
-            .col-12
-                //Banner destacado
-                section.header__banner
-                    img(src="images/imagen-slider-principal-eventos.jpg", alt="Banner principal", class="img-fluid")
+        //Banner destacado
+        section.header__banner
+            img(src="images/imagen-slider-principal-eventos.jpg", alt="Banner principal", class="img-fluid")
 
         // Menu de navegacion + Boton Creacion de Evento
-        .row
-            .col-12
-                section.header__navegacion
-                    .navbar-menu
-                        // Menú de navegación
-                        include _navbar
-                    // Boton de crear un evento
-                    button.ml-auto(type='button') Crear un Evento
+        section.header__navegacion.my-3
+
+            // Boton de menu
+            button(type="button", class="boton-menu hidden-md-up", data-toggle="collapse", data-target="#menu-principal", aria-expanded="false")
+                i.fa.fa-bars(aria-hidden="true")
+
+            // Boton de crear un evento
+            button.header__boton(type='button') Crear un Evento
+
+            // Menú de navegación
+            include _navbar
 
         // Banner TDG
         .row

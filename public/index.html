@@ -18,53 +18,34 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
   </head>
   <body>
-    <header class="header">
-      <div class="container">
+    <header class="header py-3">
+      <div class="container d-flex flex-wrap align-items-center">
         <!--Logo + Seccion de registro y redes sociales-->
-        <section class="header__top">
-          <div class="header__logo"><a href="index.html" alt="Link a Eventos Camersur"><img src="images/logo-eventos.svg" alt="Logo Universidad Camersur"></a></div>
-          <div class="header__acciones">
-            <div class="header__acciones header__acciones__idioma"><img src="images/bandera-espana.png" alt="Español"><a href="#">es</a></div>
-            <div class="header__acciones header__acciones__registrarse"><a href="#">REGISTRARSE</a></div>
-            <div class="header__acciones header__acciones__login"><a href="#">Iniciar sesión</a><img src="images/icono-usuario.png" alt="Iniciar sesión"></div>
-          </div>
-        </section>
+        <div class="header__logo"><a href="index.html" alt="Link a Eventos Camersur"><img src="images/logo-eventos.svg" alt="Logo Universidad Camersur"></a></div>
+        <div class="header__acciones">
+          <div class="header__acciones header__acciones__idioma"><img src="images/bandera-espana.png" alt="Español"><a href="#">es</a></div>
+          <div class="header__acciones header__acciones__registrarse"><a href="#">REGISTRARSE</a></div>
+          <div class="header__acciones header__acciones__login"><a href="#">Iniciar sesión</a><img src="images/icono-usuario.png" alt="Iniciar sesión"></div>
+        </div>
         <!-- Iconos redes sociales-->
         <section class="header__sociales"><a href="#"><img src="images/icono-facebook.png" alt="Icono de Facebook"></a><a href="#"><img src="images/icono-instagram.png" alt="Icono de Instagram"></a><a href="#"><img src="images/icono-twitter.png" alt="Icono de Twitter"></a><a href="#"><img src="images/icono-linkedin.png" alt="Icono de LinkedIn"></a><a href="#"><img src="images/icono-rss.png" alt="Icono de canal RSS"></a></section>
-        <div class="row">
-          <div class="col-12">
-            <!--Banner destacado-->
-            <section class="header__banner"><img class="img-fluid" src="images/imagen-slider-principal-eventos.jpg" alt="Banner principal"></section>
-          </div>
-        </div>
+        <!--Banner destacado-->
+        <section class="header__banner"><img class="img-fluid" src="images/imagen-slider-principal-eventos.jpg" alt="Banner principal"></section>
         <!-- Menu de navegacion + Boton Creacion de Evento-->
-        <div class="row">
-          <div class="col-12">
-            <section class="header__navegacion">
-              <div class="navbar-menu">
-                <!-- Menú de navegación-->
-                <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                  <button class="boton-menu" type="button" data-toggle="collapse" data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Toggle navigation"><span class="fa fa-bars"></span></button>
-                  <div class="collapse navbar-collapse" id="menu-principal">
-                    <ul class="navbar-nav">
-                      <li class="nav-item active dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Eventos</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </li>
-                      <li class="nav-item active dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Nosotros</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </li>
-                      <li class="nav-item active dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">Soporte</a>
-                        <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </li>
-                    </ul>
-                  </div>
-                </nav>
-              </div>
-              <!-- Boton de crear un evento-->
-              <button class="ml-auto" type="button">Crear un Evento</button>
-            </section>
-          </div>
-        </div>
+        <section class="header__navegacion my-3">
+          <!-- Boton de menu-->
+          <button class="boton-menu hidden-md-up" type="button" data-toggle="collapse" data-target="#menu-principal" aria-expanded="false"><i class="fa fa-bars" aria-hidden="true"></i></button>
+          <!-- Boton de crear un evento-->
+          <button class="header__boton" type="button">Crear un Evento</button>
+          <!-- Menú de navegación-->
+          <nav class="menu-top collapse" id="menu-principal">
+            <ul>
+              <li class="active"><a href="#">Eventos</a></li>
+              <li><a href="#">Nosotros</a></li>
+              <li><a href="#">Soporte</a></li>
+            </ul>
+          </nav>
+        </section>
         <!-- Banner TDG-->
         <div class="row">
           <div class="hidden-xs-down col-sm-12 text-center">

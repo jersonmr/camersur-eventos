@@ -1,28 +1,9 @@
-nav.navbar.navbar-toggleable-md.navbar-light.bg-faded
-    button.boton-menu(type='button', data-toggle='collapse', data-target='#menu-principal', aria-controls='menu-principal', aria-expanded='false', aria-label='Toggle navigation')
-        span.fa.fa-bars
-
-    #menu-principal.collapse.navbar-collapse
-        ul.navbar-nav
-            li.nav-item.active.dropdown
-                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Eventos
-                .dropdown-menu
-                    a.dropdown-item(href='#') Action
-                    a.dropdown-item(href='#') Another action
-                    a.dropdown-item(href='#') Something else here
-            li.nav-item.active.dropdown
-                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Nosotros
-                .dropdown-menu
-                    a.dropdown-item(href='#') Action
-                    a.dropdown-item(href='#') Another action
-                    a.dropdown-item(href='#') Something else here
-            li.nav-item.active.dropdown
-                a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
-                    | Soporte
-                .dropdown-menu
-                    a.dropdown-item(href='#') Action
-                    a.dropdown-item(href='#') Another action
-                    a.dropdown-item(href='#') Something else here
+nav#menu-principal.menu-top.collapse
+    ul
+        li.active
+            a(href="#") Eventos
+        li
+            a(href="#") Nosotros
+        li
+            a(href="#") Soporte
 
