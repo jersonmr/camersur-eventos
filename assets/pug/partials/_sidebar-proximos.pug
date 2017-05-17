@@ -1,22 +1,25 @@
 // Calendario
 section.calendario
     button.calendario__boton(type="button")
-        i.fa.i.fa.fa-calendar
-        h4 Próximos Eventos
+        a(href="#")
+            i.fa.i.fa.fa-calendar
+            h4 Próximos Eventos
 
 // Buscador de Eventos
 section.buscador
     h4.buscador__titulo BUSCADOR DE EVENTOS
     .buscador__bloque
-        form.buscador__frm
+        form.buscador__form
             input.form-control(type="text", placeholder="PALABRA CLAVE")
             input.form-control(type="text", placeholder="ORGANIZADOR")
             select.form-control
                 option(selected="selected") CATEGORÍA
+
             button.buscador__boton(type="button") Buscar
 
 // Publicidad
-img(src="images/esmitecp.png", class="img-fluid")
+.text-center
+    img(src="images/esmitecp.png", class="img-fluid text-center")
 
 // Redes Sociales
 section.sociales

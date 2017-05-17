@@ -1,0 +1,76 @@
+/* Sidebar seccion proximos eventos */
+
+// Calendario
+.calendario {
+  &__boton {
+    background-color: orange;
+    border: 0;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    a {
+      color: #fff;
+      font-family: $josefin-font;
+      font-size: 1.5rem;
+    }
+
+    .fa {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Buscador de eventos
+.buscador {
+  background-color: $gris-ligero;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  &__titulo {
+    background-color: $azul-oscuro;
+    color: #fff;
+    font-family: $josefin-font;
+    font-size: em(21);
+    font-weight: bold;
+    padding: 1rem 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__bloque {
+    width: 85%;
+    margin: -1.5rem auto 1rem;
+  }
+  &__form {
+    .form-control {
+      font-family: $montserrat-font;
+      font-size: em(16);
+      font-weight: 300;
+      margin: 0.5rem 0;
+    }
+  }
+  &__boton {
+    background-color: $azul-claro;
+    padding: 0.5rem 0.75rem;
+    color: #fff;
+    font-family: $montserrat-font;
+    font-size: em(18);
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+  }
+}
+
+// Iconos redes sociales en blanco
+.sociales {
+  background-color: $azul-claro;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0.5rem 0.75rem;
+  &__icon {
+    margin: 0 0.15rem;
+  }
+}

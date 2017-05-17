@@ -62,11 +62,12 @@
     margin-top: 0.5rem;
     padding: 1rem;
     .dia {
-      font-size: 3.5rem;
-      font-weight: bold;
+      font-family: $roboto-font;
+      font-size: em(50);
     }
     .mes {
-      font-size: 1rem;
+      font-family: $montserrat-font;
+      font-size: em(18);
     }
   }
 }

@@ -40,4 +40,8 @@
     background: $verde;
     margin-top: auto;
   }
+  &--todos {
+    background-color: $azul-oscuro;
+    border-left: 0.5rem solid orange;
+  }
 }

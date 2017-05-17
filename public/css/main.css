@@ -290,12 +290,13 @@ table {
 }
 
 .card-eventos__fecha .dia {
-  font-size: 3.5rem;
-  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-size: 3.125em;
 }
 
 .card-eventos__fecha .mes {
-  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125em;
 }
 
 .cmseventos-boton {
@@ -347,6 +348,11 @@ table {
   margin-top: auto;
 }
 
+.cmseventos-boton--todos {
+  background-color: #224668;
+  border-left: 0.5rem solid orange;
+}
+
 .cms-titulo {
   color: #116B99;
   font-family: "Josefin Sans", sans-serif;
@@ -387,6 +393,80 @@ table {
 .cms-titulo--amarillo {
   border-left: 0.3em solid #FCC900;
   color: #116B99;
+}
+
+/* Sidebar seccion proximos eventos */
+.calendario__boton {
+  background-color: orange;
+  border: 0;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.calendario__boton a {
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+}
+
+.calendario__boton .fa {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.buscador {
+  background-color: #E8E8E8;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.buscador__titulo {
+  background-color: #224668;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.3125em;
+  font-weight: bold;
+  padding: 1rem 1rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.buscador__bloque {
+  width: 85%;
+  margin: -1.5rem auto 1rem;
+}
+
+.buscador__form .form-control {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+
+.buscador__boton {
+  background-color: #248DC6;
+  padding: 0.5rem 0.75rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.sociales {
+  background-color: #248DC6;
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  padding: 0.5rem 0.75rem;
+}
+
+.sociales__icon {
+  margin: 0 0.15rem;
 }
 
 /*# sourceMappingURL=main.css.map */
