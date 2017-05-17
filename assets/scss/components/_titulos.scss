@@ -1,0 +1,32 @@
+.cms-titulo {
+  color: $azul-medio;
+  font-family: $josefin-font;
+  font-size: em(22);
+  font-weight: 600;
+  margin: 0.5em auto;
+  text-transform: uppercase;
+  &--verde, &--azul, &--amarillo {
+    border-bottom: 1px solid $azul-claro;
+    font-size: em(18);
+    padding: 0.75em 0.5em 0.25em 0.5em;
+    @include media(sm) {
+      font-size: em(22);
+    }
+    @include media(md) {
+      font-size: em(36);
+    }
+  }
+  &--verde {
+    border-left: 0.3em solid $verde;
+    color: $azul-medio;
+  }
+  &--azul {
+    border-left: 0.3em solid $azul-claro;
+    color: $azul-medio;
+  }
+  &--amarillo {
+    border-left: 0.3em solid $amarillo;
+    color: $azul-medio;
+  }
+
+}

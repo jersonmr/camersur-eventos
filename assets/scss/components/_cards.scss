@@ -1,0 +1,72 @@
+// Cards
+.card-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  &__item {
+    background-color: #fff;
+    border: 1px solid $verde;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 100%;
+    margin-bottom: 1em;
+    position: relative;
+    @include media(md) {
+      flex: 0 1 calc(50% - 1em);
+    }
+  }
+
+  &__img {
+    object-fit: cover;
+  }
+
+  // Bloque de texto + Fecha
+  &__bloque {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__titulo {
+    color: $azul-medio;
+    font-family: $josefin-font;
+    font-size: em(18);
+    font-weight: 600;
+    margin: 0.5rem auto;
+    text-transform: uppercase;
+  }
+  &__descripcion {
+    font-family: $montserrat-font;
+    font-size: em(16);
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 1em auto;
+  }
+  &__txt-complementario {
+    color: $azul-claro;
+    font-family: $montserrat-font;
+    font-size: em(12);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  // Fecha
+  &__fecha {
+    border: 2px solid #c4c4c4;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    .dia {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+    .mes {
+      font-size: 1rem;
+    }
+  }
+}

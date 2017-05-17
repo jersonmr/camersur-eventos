@@ -219,4 +219,174 @@ table {
   text-decoration: none;
 }
 
+.card-eventos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card-eventos__item {
+  background-color: #fff;
+  border: 1px solid #80B100;
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 100%;
+  margin-bottom: 1em;
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .card-eventos__item {
+    flex: 0 1 calc(50% - 1em);
+  }
+}
+
+.card-eventos__img {
+  object-fit: cover;
+}
+
+.card-eventos__bloque {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card-eventos__titulo {
+  color: #116B99;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin: 0.5rem auto;
+  text-transform: uppercase;
+}
+
+.card-eventos__descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 1em auto;
+}
+
+.card-eventos__txt-complementario {
+  color: #248DC6;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.card-eventos__fecha {
+  border: 2px solid #c4c4c4;
+  color: orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+}
+
+.card-eventos__fecha .dia {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.card-eventos__fecha .mes {
+  font-size: 1rem;
+}
+
+.cmseventos-boton {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  margin: 1em auto;
+  margin-top: auto;
+  padding: 1em 3em;
+  text-align: center;
+  text-transform: uppercase;
+  width: 90%;
+}
+
+.cmseventos-boton a {
+  color: #fff;
+  position: relative;
+}
+
+.cmseventos-boton a:before {
+  content: '';
+  border-left: 6px solid #fff;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 105%;
+  margin-top: 0.2em;
+}
+
+.cmseventos-boton a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.cmseventos-boton--boton1 {
+  background: #FCC900;
+}
+
+.cmseventos-boton--boton2 {
+  background: #248DC6;
+}
+
+.cmseventos-boton--boton3 {
+  background: #80B100;
+  margin-top: auto;
+}
+
+.cms-titulo {
+  color: #116B99;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.375em;
+  font-weight: 600;
+  margin: 0.5em auto;
+  text-transform: uppercase;
+}
+
+.cms-titulo--verde, .cms-titulo--azul, .cms-titulo--amarillo {
+  border-bottom: 1px solid #248DC6;
+  font-size: 1.125em;
+  padding: 0.75em 0.5em 0.25em 0.5em;
+}
+
+@media (min-width: 768px) {
+  .cms-titulo--verde, .cms-titulo--azul, .cms-titulo--amarillo {
+    font-size: 1.375em;
+  }
+}
+
+@media (min-width: 992px) {
+  .cms-titulo--verde, .cms-titulo--azul, .cms-titulo--amarillo {
+    font-size: 2.25em;
+  }
+}
+
+.cms-titulo--verde {
+  border-left: 0.3em solid #80B100;
+  color: #116B99;
+}
+
+.cms-titulo--azul {
+  border-left: 0.3em solid #248DC6;
+  color: #116B99;
+}
+
+.cms-titulo--amarillo {
+  border-left: 0.3em solid #FCC900;
+  color: #116B99;
+}
+
 /*# sourceMappingURL=main.css.map */
