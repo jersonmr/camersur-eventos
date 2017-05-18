@@ -53,6 +53,7 @@
   }
   &__boton {
     background-color: $azul-claro;
+    border: 0;
     padding: 0.5rem 0.75rem;
     color: #fff;
     font-family: $montserrat-font;
@@ -72,5 +73,102 @@
   padding: 0.5rem 0.75rem;
   &__icon {
     margin: 0 0.15rem;
+  }
+}
+
+// Eventos destacados
+.destacados {
+  &__item {
+    border: 1px solid $verde;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    @include media(md) {
+      flex-direction: row;
+    }
+  }
+  &__img {
+    object-fit: cover;
+    @include media(md) {
+      flex: 1 1 30%;
+    }
+  }
+  &__bloque {
+    padding: 1rem 0.5rem;
+    @include media(md) {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 70%;
+      padding-left: 1rem;
+    }
+  }
+  &__titulo {
+    font-family: $josefin-font;
+    font-size: em(18);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    a {
+      color: $azul-medio;
+    }
+  }
+  &__descripcion {
+    font-family: $montserrat-font;
+    font-size: em(16);
+    font-weight: 300;
+    margin-bottom: 1rem;
+  }
+  &__fecha {
+    color: $azul-medio;
+    font-family: $montserrat-font;
+    font-size: em(12);
+    font-weight: 600;
+    margin-top: auto;
+  }
+}
+
+// Estilos sidebar destacados
+.novedades {
+  background-color: $gris-ligero;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  &__titulo {
+    background-color: $azul-oscuro;
+    color: #fff;
+    font-family: $josefin-font;
+    font-size: em(20);
+    font-weight: 600;
+    padding: 1rem 0.5rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__form {
+    margin: -1rem auto 1rem;
+    text-align: center;
+    width: 90%;
+    .form-control {
+      font-family: $montserrat-font;
+      font-size: em(16);
+      font-weight: 300;
+    }
+    input[type="submit"] {
+      background-color: $azul-claro;
+      border: 0;
+      color: #fff;
+      font-family: $montserrat-font;
+      font-size: em(18);
+      font-weight: 600;
+      margin-top: 1rem;
+      padding: 0.5rem 0.75rem;
+      width: 100%;
+    }
+  }
+}
+
+// Publicidades
+.publicidad {
+  &__item {
+    margin: 1rem auto;
   }
 }

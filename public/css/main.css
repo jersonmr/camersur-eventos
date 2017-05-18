@@ -448,6 +448,7 @@ table {
 
 .buscador__boton {
   background-color: #248DC6;
+  border: 0;
   padding: 0.5rem 0.75rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
@@ -467,6 +468,115 @@ table {
 
 .sociales__icon {
   margin: 0 0.15rem;
+}
+
+.destacados__item {
+  border: 1px solid #80B100;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 992px) {
+  .destacados__item {
+    flex-direction: row;
+  }
+}
+
+.destacados__img {
+  object-fit: cover;
+}
+
+@media (min-width: 992px) {
+  .destacados__img {
+    flex: 1 1 30%;
+  }
+}
+
+.destacados__bloque {
+  padding: 1rem 0.5rem;
+}
+
+@media (min-width: 992px) {
+  .destacados__bloque {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 70%;
+    padding-left: 1rem;
+  }
+}
+
+.destacados__titulo {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.destacados__titulo a {
+  color: #116B99;
+}
+
+.destacados__descripcion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.destacados__fecha {
+  color: #116B99;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.novedades {
+  background-color: #E8E8E8;
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+}
+
+.novedades__titulo {
+  background-color: #224668;
+  color: #fff;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.25em;
+  font-weight: 600;
+  padding: 1rem 0.5rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.novedades__form {
+  margin: -1rem auto 1rem;
+  text-align: center;
+  width: 90%;
+}
+
+.novedades__form .form-control {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.novedades__form input[type="submit"] {
+  background-color: #248DC6;
+  border: 0;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+.publicidad__item {
+  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=main.css.map */
