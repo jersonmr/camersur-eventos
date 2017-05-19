@@ -1,0 +1,87 @@
+.footer {
+  background: $azul-claro;
+  border-top: 6px solid $amarillo;
+  color: #fff;
+  font-family: $montserrat-font;
+  font-size: em(14);
+  margin-top: 2em;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    right: 0;
+    top: -6px;
+    border-top: 6px solid $azul-oscuro;
+  }
+  .acerca, .categorias {
+    @include media(sm) {
+      border-right: 1px solid $azul-ligero;
+    }
+
+  }
+  .categorias {
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+  }
+  &__titulo {
+    color: #fff;
+    font-family: $montserrat-font;
+    font-size: em(16);
+    font-weight: 600;
+    margin: 1em auto;
+    @include media(sm) {
+      text-align: left;
+      font-weight: bold;
+    }
+  }
+  &__menu {
+    &__item {
+      display: block;
+      margin: 0.5em auto;
+      @include media(sm) {
+        text-align: left;
+      }
+    }
+    &__link {
+      color: darken(#fff, 10%);
+      font-size: 0.9em;
+      &:hover {
+        color: $amarillo;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+  // Informacion de contacto
+  .contacto {
+    font-family: $montserrat-font;
+    font-size: em(14);
+    line-height: 1.5;
+    p {
+      text-align: center;
+    }
+    @include media(sm) {
+      p {
+        text-align: left;
+      }
+    }
+    @include media(sm) {
+      p {
+        margin: 1em auto;
+      }
+    }
+  }
+  // Copyright
+  .copyright {
+    font-family: $montserrat-font;
+    font-size: em(12);
+    line-height: 1.5;
+    margin-top: 1em;
+    @include media(sm) {
+      text-align: center;
+    }
+  }
+}

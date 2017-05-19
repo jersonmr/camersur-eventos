@@ -297,6 +297,140 @@ table {
   }
 }
 
+.redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1em auto;
+  padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+  .redes {
+    flex-direction: row;
+  }
+}
+
+.redes__item {
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.6);
+  height: 460px;
+  width: 100%;
+  margin-bottom: 1em;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .redes__item {
+    margin: 0 0.5em;
+  }
+}
+
+.footer {
+  background: #248DC6;
+  border-top: 6px solid #FCC900;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  margin-top: 2em;
+  padding: 1em;
+  position: relative;
+  text-align: center;
+}
+
+.footer:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  right: 0;
+  top: -6px;
+  border-top: 6px solid #224668;
+}
+
+@media (min-width: 768px) {
+  .footer .acerca, .footer .categorias {
+    border-right: 1px solid #ADE6FB;
+  }
+}
+
+.footer .categorias {
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+}
+
+.footer__titulo {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 1em auto;
+}
+
+@media (min-width: 768px) {
+  .footer__titulo {
+    text-align: left;
+    font-weight: bold;
+  }
+}
+
+.footer__menu__item {
+  display: block;
+  margin: 0.5em auto;
+}
+
+@media (min-width: 768px) {
+  .footer__menu__item {
+    text-align: left;
+  }
+}
+
+.footer__menu__link {
+  color: #e6e6e6;
+  font-size: 0.9em;
+}
+
+.footer__menu__link:hover {
+  color: #FCC900;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.footer .contacto {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  line-height: 1.5;
+}
+
+.footer .contacto p {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer .contacto p {
+    text-align: left;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer .contacto p {
+    margin: 1em auto;
+  }
+}
+
+.footer .copyright {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75em;
+  line-height: 1.5;
+  margin-top: 1em;
+}
+
+@media (min-width: 768px) {
+  .footer .copyright {
+    text-align: center;
+  }
+}
+
 .card-eventos {
   display: flex;
   flex-wrap: wrap;
