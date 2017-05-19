@@ -1,0 +1,33 @@
+extends partials/layout
+
+block content
+
+    .container
+        .row
+            .col-12.col-md-8.col-lg-9
+                // Listado de eventos
+                include partials/_detalle-evento
+
+            .col-12.col-md-4.col-lg-3
+                // Sidebar (calendario | Buscador | Publicidad)
+                include partials/_sidebar-detalle-evento
+
+        // Banner TDG
+        .row
+            .hidden-xs-down.col-sm-12.text-center
+                section
+                    a(href="http://www.camersur.com", target="_blank")
+                        img(src="images/Banner5.png", alt="Banner publicitario Camersur", class='img-fluid')
+
+        .row
+            .col-12.col-md-8.col-lg-9
+
+                // Eventos destacados (mostrar solo 4)
+                include partials/_eventos4
+
+                // Publicar evento
+                include partials/_publicar-evento
+
+            .col-12.col-md-4.col-lg-3
+                // Sidebar destacados
+                include partials/_sidebar-anunciantes

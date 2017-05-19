@@ -1,0 +1,127 @@
+// Estilos para el detalle del evento | Descripcion
+.detalle-evento {
+  &__info {
+    color: $gris-oscuro;
+    font-family: $josefin-font;
+    font-size: em(12);
+    margin: -0.5rem auto 1rem 2rem;
+    text-transform: uppercase;
+  }
+  p {
+    font-family: $montserrat-font;
+    font-size: em(16);
+    font-weight: 300;
+    line-height: 1.5;
+    text-align: justify;
+    margin: 1rem auto;
+  }
+
+  /*****************************************
+  * Estilos para la sección de expositores *
+  ******************************************/
+  &__expositores {
+    margin-top: 2rem;
+  }
+  &__expositores-titulo {
+    border-bottom: 1px solid $gris-claro;
+    color: $gris-oscuro;
+    font-family: $montserrat-font;
+    font-size: em(25);
+    line-height: 1.5;
+  }
+  &__expositores-listado {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 100%;
+    @include media(sm) {
+      flex-direction: row;
+    }
+    @include media(md) {
+      width: 80%;
+    }
+  }
+  &__expositores-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  &__expositores-nombre {
+    color: $gris-oscuro;
+    font-family: $josefin-font;
+    font-size: em(15);
+    font-weight: 600;
+    margin: 1rem auto 0.5rem;
+    text-transform: uppercase;
+  }
+  &__expositores-profesion {
+    color: $gris-oscuro;
+    font-family: $montserrat-font;
+    font-size: em(12);
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+}
+
+/*****************************************
+* Sidebar del detalle                    *
+******************************************/
+.info-evento {
+  background: url("../images/FondoSidebarEventoIndividual.jpg");
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  height: 300px;
+  padding: 1rem;
+  margin-bottom: 1em;
+  &__etiqueta {
+    margin: 0.75rem auto;
+    h4 {
+      color: $gris-claro;
+      font-family: $josefin-font;
+      font-size: em(15);
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+      text-transform: uppercase;
+    }
+    span {
+      font-family: $montserrat-font;
+      font-size: em(21);
+      font-weight: 300;
+      text-transform: uppercase;
+    }
+    &:last-child {
+      span {
+        font-size: em(14);
+        line-height: 1.4;
+        text-transform: none;
+      }
+    }
+  }
+}
+
+/*****************************************
+* Seccion publicar evento                *
+******************************************/
+.publicar-evento {
+  margin: 2rem auto;
+  width: 80%;
+  &__titulo, &__subtitulo {
+    color: $azul-medio;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__titulo {
+    font-family: $josefin-font;
+    font-size: em(46);
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  &__subtitulo {
+    font-family: $montserrat-font;
+    font-size: em(21);
+    margin-bottom: 2rem;
+  }
+}
