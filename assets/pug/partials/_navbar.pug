@@ -1,9 +1,15 @@
-nav#menu-principal.menu-top.collapse
-    ul
-        li.active
-            a(href="#") Eventos
-        li
-            a(href="#") Nosotros
-        li
-            a(href="#") Soporte
+button.boton-menu.d-lg-none(type='button', data-toggle='collapse', data-target='#menu-principal', aria-expanded='false')
+  i.fa.fa-bars(aria-hidden='true')
+
+a.boton-crear-evento(href="#")
+  img(src="images/botonCrearUnEvento.jpg", class="img-fluid")
+
+nav.collapse.header__menu#menu-principal
+  ul
+    li.active
+      a(href="#") Eventos
+    li
+      a(href="#") Nosotros
+    li
+      a(href="#") Soporte
 

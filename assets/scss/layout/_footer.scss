@@ -1,6 +1,6 @@
 .footer {
   background: $azul-claro;
-  border-top: 6px solid $amarillo;
+  border-top: 6px solid $amarillo-universidad;
   color: #fff;
   font-family: $montserrat-font;
   font-size: em(14);
@@ -49,7 +49,7 @@
       color: darken(#fff, 10%);
       font-size: 0.9em;
       &:hover {
-        color: $amarillo;
+        color: $amarillo-universidad;
         font-weight: bold;
         text-decoration: none;
       }
