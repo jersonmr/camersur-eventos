@@ -75,13 +75,13 @@
   &__sociales {
     margin: 0;
     @include media(sm) {
-      margin-top: -1rem;
-    }
-    @include media(md) {
       margin-top: -2rem;
     }
+    @include media(md) {
+      margin-top: -3.5rem;
+    }
     @include media(lg) {
-      margin-top: -3rem;
+      margin-top: -4.5rem;
     }
     a {
       margin: 0 0.1rem;

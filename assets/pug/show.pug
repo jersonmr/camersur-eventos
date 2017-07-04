@@ -1,33 +1,43 @@
 extends partials/layout
 
 block content
+  //Banner destacado
+  section.header__banner
+    img(src="images/imagen-slider-principal-eventos.jpg", alt="Banner principal", class="img-fluid")
+    .container.d-flex.align-items-center
+      .header__flotante
+        .header__texto-banner
+          .header__texto-banner__titulo TEXTO DESTACADO
+          .header__texto-banner__subtitulo TEXTO COMPLEMENTARIO
+
+  section.detalle-evento.my-5
+    .container
+      .row
+        .col-12.col-md-8.col-lg-9
+          // Listado de eventos
+          include partials/_detalle-evento
+
+        .col-12.col-md-4.col-lg-3
+          // Sidebar (calendario | Buscador | Publicidad)
+          include partials/_sidebar-detalle-evento
+
+      // Banner TDG
+      .row
+        .hidden-xs-down.col-sm-12.text-center
+          section
+            a(href="http://www.camersur.com", target="_blank")
+              img(src="images/Banner5.png", alt="Banner publicitario Camersur", class='img-fluid')
 
     .container
-        .row
-            .col-12.col-md-8.col-lg-9
-                // Listado de eventos
-                include partials/_detalle-evento
+      .row
+        .col-md-8.col-lg-9
 
-            .col-12.col-md-4.col-lg-3
-                // Sidebar (calendario | Buscador | Publicidad)
-                include partials/_sidebar-detalle-evento
+          // Eventos destacados (mostrar solo 4)
+          include partials/_eventos4
 
-        // Banner TDG
-        .row
-            .hidden-xs-down.col-sm-12.text-center
-                section
-                    a(href="http://www.camersur.com", target="_blank")
-                        img(src="images/Banner5.png", alt="Banner publicitario Camersur", class='img-fluid')
+          // Publicar evento
+          include partials/_publicar-evento
 
-        .row
-            .col-12.col-md-8.col-lg-9
-
-                // Eventos destacados (mostrar solo 4)
-                include partials/_eventos4
-
-                // Publicar evento
-                include partials/_publicar-evento
-
-            .col-12.col-md-4.col-lg-3
-                // Sidebar destacados
-                include partials/_sidebar-anunciantes
+        .col-md-4.col-lg-3
+          // Sidebar destacados
+          include partials/_sidebar-anunciantes

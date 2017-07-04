@@ -10,10 +10,10 @@
     display: flex;
     flex-direction: column;
     flex: 0 1 100%;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
     position: relative;
     @include media(md) {
-      flex: 0 1 calc(50% - 1em);
+      flex: 0 1 calc(50% - 0.5rem);
     }
   }
 
