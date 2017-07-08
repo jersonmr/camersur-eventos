@@ -5,7 +5,7 @@
   font-weight: 600;
   margin: 0.5em auto;
   text-transform: uppercase;
-  &--verde, &--azul, &--amarillo {
+  &--verde, &--azul, &--amarillo, &--amarillo-blanco {
     border-bottom: 1px solid $azul-claro;
     font-size: em(18);
     padding: 0.75em 0.5em 0.25em 0.5em;
@@ -27,6 +27,11 @@
   &--amarillo {
     border-left: 0.3em solid $amarillo-universidad;
     color: $azul-medio;
+  }
+	&--amarillo-blanco {
+    border-left: 0.3em solid $amarillo-universidad;
+		border-bottom: 1px solid #fff;
+    color: #fff;
   }
 
 }
