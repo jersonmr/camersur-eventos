@@ -8,7 +8,7 @@
 
   &__logo {
     @include media(sm) {
-      flex-basis: 50%;
+      flex-basis: 30%;
       img {
         width: 75%;
       }
@@ -75,13 +75,13 @@
   &__sociales {
     margin: 0;
     @include media(sm) {
-      margin-top: -2rem;
+      margin-top: -1rem;
     }
     @include media(md) {
-      margin-top: -3.5rem;
+      margin-top: -1.5rem;
     }
     @include media(lg) {
-      margin-top: -4.5rem;
+      margin-top: -2rem;
     }
     a {
       margin: 0 0.1rem;
@@ -136,7 +136,8 @@
 
     a {
       border-top: 1px solid $gris-empresas;
-      color: $azul-medio;
+			color: $azul-medio;
+			font-family: $montserrat-font;
       text-decoration: none;
       text-transform: uppercase;
       @include media(md) {

@@ -1,0 +1,144 @@
+extends partials/layout
+block content
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.globaltdg.com", target="_blank")
+        img(src="images/BannerTDG.png", alt="Banner publicitario", class="img-fluid")
+
+  section.eventos.my-5
+    .container
+      .eventos__info
+        .eventos__titulo
+          h1.cms-titulo.cms-titulo--amarillo PRÓXIMOS EVENTOS
+        .eventos__fecha
+          span.fecha JULIO 2017
+          select.pick-mes
+            option(selected="selected") ELEGIR OTRO MES
+
+      section.card-eventos
+        article.card-eventos__item.card-eventos__item--proximos
+            img.card-eventos__img.img-fluid(src='images/imagen-proximos-eventos-1.jpg', alt='Card image cap')
+            .card-eventos__bloque.px-3.py-2
+                .card-eventos__texto
+                    h4.card-eventos__titulo NOMBRE DEL EVENTO CONSIDERABLE Y LARGO ES UNA LOCURA DE TEXTO
+                    p.card-eventos__descripcion
+                        | Some quick example text to build on the card title and make up the bulk of the card's content.
+                // Fecha
+                .card-eventos__fecha
+                    span.dia 08
+                    span.mes ABRIL
+
+            .card-eventos__txt-complementario.px-3 LUGAR Y HORA DEL EVENTO
+
+            .cmseventos-boton.cmseventos-boton--boton3
+                a(href='#') LEER MÁS
+
+        article.card-eventos__item.card-eventos__item--proximos
+            img.card-eventos__img.img-fluid(src='images/imagen-proximos-eventos-1.jpg', alt='Card image cap')
+            .card-eventos__bloque.px-3.py-2
+                .card-eventos__texto
+                    h4.card-eventos__titulo NOMBRE DEL EVENTO CONSIDERABLE Y LARGO ES UNA LOCURA DE TEXTO
+                    p.card-eventos__descripcion
+                        | Some quick example text to build on the card title and make up the bulk of the card's content.
+                // Fecha
+                .card-eventos__fecha
+                    span.dia 08
+                    span.mes ABRIL
+
+            .card-eventos__txt-complementario.px-3 LUGAR Y HORA DEL EVENTO
+
+            .cmseventos-boton.cmseventos-boton--boton3
+                a(href='#') LEER MÁS
+                
+        article.card-eventos__item.card-eventos__item--proximos
+            img.card-eventos__img.img-fluid(src='images/imagen-proximos-eventos-1.jpg', alt='Card image cap')
+            .card-eventos__bloque.px-3.py-2
+                .card-eventos__texto
+                    h4.card-eventos__titulo NOMBRE DEL EVENTO CONSIDERABLE Y LARGO ES UNA LOCURA DE TEXTO
+                    p.card-eventos__descripcion
+                        | Some quick example text to build on the card title and make up the bulk of the card's content.
+                // Fecha
+                .card-eventos__fecha
+                    span.dia 08
+                    span.mes ABRIL
+
+            .card-eventos__txt-complementario.px-3 LUGAR Y HORA DEL EVENTO
+
+            .cmseventos-boton.cmseventos-boton--boton3
+                a(href='#') LEER MÁS
+        article.card-eventos__item.card-eventos__item--proximos
+            img.card-eventos__img.img-fluid(src='images/imagen-proximos-eventos-1.jpg', alt='Card image cap')
+            .card-eventos__bloque.px-3.py-2
+                .card-eventos__texto
+                    h4.card-eventos__titulo NOMBRE DEL EVENTO CONSIDERABLE Y LARGO ES UNA LOCURA DE TEXTO
+                    p.card-eventos__descripcion
+                        | Some quick example text to build on the card title and make up the bulk of the card's content.
+                // Fecha
+                .card-eventos__fecha
+                    span.dia 08
+                    span.mes ABRIL
+
+            .card-eventos__txt-complementario.px-3 LUGAR Y HORA DEL EVENTO
+
+            .cmseventos-boton.cmseventos-boton--boton3
+                a(href='#') LEER MÁS
+
+        article.card-eventos__item.card-eventos__item--proximos
+            img.card-eventos__img.img-fluid(src='images/imagen-proximos-eventos-1.jpg', alt='Card image cap')
+            .card-eventos__bloque.px-3.py-2
+                .card-eventos__texto
+                    h4.card-eventos__titulo NOMBRE DEL EVENTO CONSIDERABLE Y LARGO ES UNA LOCURA DE TEXTO
+                    p.card-eventos__descripcion
+                        | Some quick example text to build on the card title and make up the bulk of the card's content.
+                // Fecha
+                .card-eventos__fecha
+                    span.dia 08
+                    span.mes ABRIL
+
+            .card-eventos__txt-complementario.px-3 LUGAR Y HORA DEL EVENTO
+
+            .cmseventos-boton.cmseventos-boton--boton3
+                a(href='#') LEER MÁS
+
+        article.card-eventos__item.card-eventos__item--proximos
+            img.card-eventos__img.img-fluid(src='images/imagen-proximos-eventos-1.jpg', alt='Card image cap')
+            .card-eventos__bloque.px-3.py-2
+                .card-eventos__texto
+                    h4.card-eventos__titulo NOMBRE DEL EVENTO CONSIDERABLE Y LARGO ES UNA LOCURA DE TEXTO
+                    p.card-eventos__descripcion
+                        | Some quick example text to build on the card title and make up the bulk of the card's content.
+                // Fecha
+                .card-eventos__fecha
+                    span.dia 08
+                    span.mes ABRIL
+
+            .card-eventos__txt-complementario.px-3 LUGAR Y HORA DEL EVENTO
+
+            .cmseventos-boton.cmseventos-boton--boton3
+                a(href='#') LEER MÁS
+
+      .resultados__paginacion.d-flex.justify-content-center.my-3
+        nav(aria-label='Paginacion')
+          ul.pagination
+            li.page-item
+              a.page-link(href='#', aria-label='Prev')
+                span(aria-hidden='true') «
+                span.sr-only Prev
+            li.page-item
+              a.page-link(href='#') 1
+            li.page-item
+              a.page-link(href='#') 2
+            li.page-item
+              a.page-link(href='#') 3
+            li.page-item
+              a.page-link(href='#', aria-label='Next')
+                span(aria-hidden='true') »
+                span.sr-only Next
+
+  section.tienes-evento
+    .container.text-center
+      // Publicar evento
+      include partials/_publicar-evento
+
+  section.redes.my-5
+    include partials/_redes

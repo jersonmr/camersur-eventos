@@ -1,0 +1,45 @@
+.eventos {
+	&__info {		
+		margin-bottom: 1rem;
+		width: 100%;
+		@include media(sm) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__titulo {
+		@include media(sm) {
+			width: 60%;
+		}
+		@include media(md) {
+			width: 70%;
+		}
+	}
+	&__fecha {				
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-family: $montserrat-font;
+		text-transform: uppercase;
+		@include media(sm) {
+			width: 40%;
+		}
+		@include media(md) {
+			width: 30%;
+		}
+		@include media(lg) {
+			width: 30%;
+		}
+		.fecha {
+			color: #8099b1;
+			font-size: em(16);
+			font-weight: 600;
+		}
+		.pick-mes {
+			color: #8099b1;
+			font-size: em(15);
+			font-weight: 600;
+		}
+	}
+}

@@ -2,19 +2,27 @@
 .card-eventos {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 
   &__item {
     background-color: #fff;
     border: 1px solid $verde-eventos;
     display: flex;
     flex-direction: column;
-    flex: 0 1 100%;
-    margin-bottom: 1rem;
+		flex: 0 1 100%;		
+    margin: 0 0.5rem 1rem;
     position: relative;
     @include media(md) {
-      flex: 0 1 calc(50% - 0.5rem);
-    }
+      flex: 0 1 calc(50% - 1rem);
+		}
+		&--proximos {
+			@include media(sm) {
+      	flex: 0 1 calc(50% - 1rem);
+			}
+			@include media(md) {
+      	flex: 0 1 calc(33.3% - 1rem);
+			}
+		}
   }
 
   &__img {

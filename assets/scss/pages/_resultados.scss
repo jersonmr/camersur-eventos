@@ -1,0 +1,139 @@
+.resultados {
+  &__cantidad {
+    color: darken($gris-empresas, 25%);
+    font-family: $montserrat-font;
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    flex-basis: 100%;
+    order: -1;
+  }
+  &__listado {
+
+  }
+  &__item {
+		border: 1px solid #eaeded;
+    display: flex;
+    flex-direction: column;
+		align-items: center;		
+		margin-bottom: 0.5rem;		
+		width: 100%;
+    @include media(sm) {
+			flex-direction: row;			
+    }
+  }
+  &__info {
+    background-color: $gris-empresas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+		align-items: center;
+		width: 100%;
+    @include media(sm) {
+			flex-direction: row;
+			justify-content: flex-start;
+      width: 70%;
+    }
+  }
+  &__img {
+		width: 100%;
+    @include media(sm) {
+      width: 20%;
+      height: 70%;
+    }
+  }
+  &__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: $montserrat-font;
+    padding: 1rem;
+    @include media(sm) {
+      width: 90%;
+    }
+    a {
+      color: $azul-camersur;
+      text-decoration: none;
+      transition: all 0.5s ease;
+      &:hover {
+        color: darken($azul-camersur, 15%);
+      }
+    }
+  }
+  &__titulo {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  &__descripcion {
+    color: darken($gris-empresas, 45%);
+	}
+	&__boton {
+		display: block;
+		width: 100%;
+		margin: 1rem auto;
+		padding: 1rem 0;
+		text-align: center;
+		@include media(sm) {
+			width: 30%;
+		}
+		
+		a {
+			background-color: $verde-eventos;
+			color: #fff;
+			font-family: $montserrat-font;
+			padding: 1rem 3rem;
+			text-transform: uppercase;
+			transition: all 0.5s ease;
+			&:after {
+				content: "\f0da";
+				font-family: FontAwesome;
+				margin-left: 0.4rem;
+			}
+
+			&:hover {
+				background-color: $amarillo-universidad;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+	/*
+	|---------------------------------------------
+	|ESTILOS PARA EVENTOS ANTERIORES
+	|---------------------------------------------
+	|Se agregaron aqui ya que se estan tomando los
+	|mismos estilos de la vista de resultados
+	*/
+	&__data {
+		background-color: rgba(#e4e7e7, 0.3);		
+		flex-basis: 100%;
+		margin-bottom: 1rem;
+		font-family: $montserrat-font;
+		font-size: em(12);
+		font-weight: 300;
+		padding: 0.5rem 1rem;
+		text-align: center;
+		@include media(sm) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	&__direccion {
+		color: #5c778f;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+		@include media(sm) {
+			margin-bottom: 0;
+		}
+	}
+	&__fecha {
+		color: #778796;
+		@include media(sm) {
+			&:before {
+				content: "";
+				border: 1px solid;
+				margin-right: 0.4rem;
+			}
+		}
+	}
+}

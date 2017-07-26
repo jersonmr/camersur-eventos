@@ -24,10 +24,10 @@
   }
   &__acerca, &__categorias, &__contacto {
     flex-basis: 100%;
-    @include media(md) {
-      border-right: 1px solid $azul-ligero;
+    @include media(md) {      
       flex-basis: calc(25% - 0.5rem);
-      padding: 0 1rem;
+			padding: 0 1rem 0 2rem;
+			text-align: left;
     }
   }
 
@@ -36,7 +36,7 @@
     font-family: $montserrat-font;
     font-size: em(16);
     font-weight: 600;
-    margin: 1em auto;
+		margin: 1em auto;		
     @include media(sm) {
       font-weight: bold;
     }
@@ -67,7 +67,7 @@
     margin-bottom: 1rem;
     p {
       margin: 0;
-      text-align: center;
+      //text-align: center;
     }
   }
   // Copyright

@@ -1,0 +1,64 @@
+extends partials/layout
+
+block content
+
+  section.cmsuniversidad-publicidad.d-none.d-sm-block
+    .container.text-center
+      a(href="http://www.camersur.com", target="_blank")
+        img(src="images/Banner5.png", alt="Banner publicitario", class="img-fluid")
+
+  section.resultados.my-5
+    .container
+      h1.cms-titulo.cms-titulo--amarillo.d-flex.flex-column EVENTOS ANTERIORES
+      .resultados__listado
+        article.resultados__item
+          .resultados__info            
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL EVETO
+              p.resultados__descripcion Breve descripción del evento    
+          .resultados__boton
+            a(href="#") VER MÁS        
+        .resultados__data
+          h4.resultados__direccion DIRECCIÓN DEL EVENTO
+          span.resultados__fecha 12/05/2017 09:00 AM            
+        article.resultados__item
+          .resultados__info            
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL EVETO
+              p.resultados__descripcion Breve descripción del evento    
+          .resultados__boton
+            a(href="#") VER MÁS        
+        .resultados__data
+          h4.resultados__direccion DIRECCIÓN DEL EVENTO
+          span.resultados__fecha 12/05/2017 09:00 AM            
+        article.resultados__item
+          .resultados__info            
+            .resultados__texto
+              h2.resultados__titulo
+                a(href="#") NOMBRE DEL EVETO
+              p.resultados__descripcion Breve descripción del evento    
+          .resultados__boton
+            a(href="#") VER MÁS        
+        .resultados__data
+          h4.resultados__direccion DIRECCIÓN DEL EVENTO
+          span.resultados__fecha 12/05/2017 09:00 AM            
+    
+      .resultados__paginacion.d-flex.justify-content-center.my-3
+        nav(aria-label='Paginacion')
+            ul.pagination
+              li.page-item
+                a.page-link(href='#', aria-label='Prev')
+                  span(aria-hidden='true') «
+                  span.sr-only Prev
+              li.page-item
+                a.page-link(href='#') 1
+              li.page-item
+                a.page-link(href='#') 2
+              li.page-item
+                a.page-link(href='#') 3
+              li.page-item
+                a.page-link(href='#', aria-label='Next')
+                  span(aria-hidden='true') »
+                  span.sr-only Next
