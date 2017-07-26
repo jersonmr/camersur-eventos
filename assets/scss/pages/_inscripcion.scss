@@ -1,0 +1,98 @@
+.inscripcion {
+	background: url("../images/bg-inscripcion.jpg") no-repeat center/contain;
+	background-size: cover;
+	font-family: $montserrat-font;
+
+	&__titulo {
+		color: #c4cfdb;
+		font-family: $josefin-font;
+		font-size: em(15);
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	&__datos, &__lugar, &__razones {
+		color: #fff;
+		font-family: $josefin-font;		
+		font-weight: 600;
+	}
+
+	&__datos {
+		display: flex;
+		flex-direction: column;		
+		justify-content: space-between;
+		margin-bottom: 2rem;
+		@include media(md) {
+			flex-direction: row;
+		}
+	}
+
+	&__fecha, &__hora, &__inversion {
+		color: #fff;
+		font-family: $montserrat-font;
+		font-size: em(21);
+		font-weight: 300;
+		margin-bottom: 1rem;
+	}
+
+	&__inversion {
+		img {
+			display: block;
+			margin-top: 0.5rem;
+		}
+	}
+	
+	&__lugar, &__razones {
+		font-size: em(16);
+		font-weight: 300;
+		color: #fff;
+		p {
+			line-height: 1.3;
+		}
+	}
+
+	&__inscribete {
+		color: #c5c3c3;
+		font-size: em(18);
+		text-align: center;
+		&--confirma {
+			color: #f2f2f2;
+			font-size: em(32);
+			display: block;
+			margin: 1rem auto 2rem;
+		}
+	}
+
+	.form-control {		
+		background: #e5e2e1;
+		border-bottom: 4px solid $amarillo-universidad;
+		color: #607c96;
+		font-family: $montserrat-font;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	.form-check {
+		text-align: left;
+		margin-bottom: 1rem;
+		.form-check-input {
+			color: #c5c3c3;
+			font-size: em(18);
+			padding: 2rem;
+		}
+	}
+
+	input[type="submit"] {
+		background-color: #8fb000;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		font-size: em(20);
+		padding: 1rem 3rem;
+		text-transform: uppercase;
+		transition: all 0.5s ease;
+		&:hover {
+			background-color: $amarillo-universidad;
+		}
+	}
+}

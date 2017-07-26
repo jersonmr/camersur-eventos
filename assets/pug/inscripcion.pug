@@ -1,0 +1,57 @@
+extends partials/layout
+
+block content
+  section.inscripcion.py-5
+    .container
+      .row
+        .col-sm-6
+          h1.cms-titulo.cms-titulo--amarillo-blanco NOMBRE DEL EVENTO
+          .inscripcion__datos
+            article.inscripcion__fecha
+              h4.inscripcion__titulo FECHA
+              span 08/07/2017
+            article.inscripcion__hora
+              h4.inscripcion__titulo HORA
+              span 09:00 AM
+            article.inscripcion__inversion
+              h4.inscripcion__titulo INVERSIÓN
+              span $ XXX
+              img(src="images/logo-paypal.png", alt="Logo Paypal")
+          .inscripcion__lugar.mb-5
+            h4.inscripcion__titulo LUGAR
+            p
+              |Dirección exacta del lugar donde se realizará el evento
+          .inscripcion__razones
+            h4.inscripcion__titulo RAZONES PARA ASISTIR
+            p
+              |Breve descripción del evento y motivos para asistir. Breve descripción del evento y motivos para asistir. Breve descripción del evento y motivos para asistir. Breve descripción del evento y motivos para asistir. Breve descripción del evento y motivos para asistir.
+        .col-sm-6
+          .inscripcion__form.mt-5.mt-sm-0
+            h2.inscripcion__inscribete
+              |INSCRÍBETE A CONTINUACIÓN
+              span.inscripcion__inscribete--confirma
+                |y confirma tu asistencia
+              form
+                .form-group
+                  input(type="text", name="nombre", placeholder="Nombre", class="form-control")
+                .form-group
+                  input(type="text", name="apellido", placeholder="Apellido", class="form-control")
+                .form-group
+                  input(type="text", name="id", placeholder="ID", class="form-control")
+                .form-group
+                  input(type="text", name="empresa", placeholder="Empresa", class="form-control")
+                .form-group
+                  select(name="pais", class="form-control")
+                    option(selected="selected") País de residencia
+                .form-group
+                  input(type="email", name="email", placeholder="Correo electrónico" class="form-control")
+                .form-group
+                  input(type="text", name="telefono", placeholder="Teléfono", class="form-control")
+                .form-check
+                  label.form-check-label
+                    input(type="checkbox", name="chk-perteneces", value="", class="form-check-input")
+                    |¿Perteneces a una empresa afiliada?
+                .form-group
+                  input(type="email", name="email2", placeholder="Correo de validación de empresa afiliada" class="form-control")
+                .form-group
+                  input(type="submit", value="inscribirme", class="btn-block")
