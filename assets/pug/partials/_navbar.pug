@@ -1,15 +1,21 @@
-button.boton-menu.d-lg-none(type='button', data-toggle='collapse', data-target='#menu-principal', aria-expanded='false')
-  i.fa.fa-bars(aria-hidden='true')
+nav.navbar.navbar-expand-md.navbar-light.header__menu
+  a(class="navbar-brand d-md-none", href="#") MENÚ
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarEventos', aria-controls='navbarEventos', aria-expanded='false', aria-label='Toggle navigation')
+    span.navbar-toggler-icon
+  #navbarEventos.collapse.navbar-collapse
+    ul.navbar-nav.mr-auto
+      li.nav-item.active.dropdown
+        a(href="#", class="nav-link dropdown-toggle", id="dropdownMenuEventos", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+          | Eventos
+        div(class="dropdown-menu" aria-labelledby="dropdownMenuEventos")
+          a(class="dropdown-item", href="#") Todos los eventos
+          a(class="dropdown-item", href="#") Eventos anteriores
+          a(class="dropdown-item", href="#") Próximos eventos
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href="nosotros.html") Nosotros
+      li.nav-item
+        a.nav-link(href="soporte.html") Soporte
 
-a.boton-crear-evento(href="#")
-  img(src="images/botonCrearUnEvento.jpg", class="img-fluid")
-
-nav.collapse.header__menu#menu-principal
-  ul
-    li.active
-      a(href="#") Eventos
-    li
-      a(href="#") Nosotros
-    li
-      a(href="#") Soporte
-
+    a.boton-crear-evento(href="#")
+      img(src="images/botonCrearUnEvento.jpg", class="img-fluid")

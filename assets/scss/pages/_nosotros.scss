@@ -1,0 +1,36 @@
+.nosotros {
+  background: url("../images/bg-nosotros.jpg") no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 670px;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+  }
+  &__titulo, &__descripcion {
+    color: #fff;
+    font-family: $montserrat-font;
+    @include media(md) {
+      margin-bottom: 2rem;
+      width: 60%;
+    }
+  }
+  &__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  &__descripcion {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.acerca {
+  font-family: $montserrat-font;
+  &__descripcion {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+}

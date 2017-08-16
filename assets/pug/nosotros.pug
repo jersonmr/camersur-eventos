@@ -1,0 +1,37 @@
+extends partials/layout
+
+block content
+
+  // Slider nosotros
+  section.nosotros
+    .container
+      h1.nosotros__titulo EVENTOS CAMERSUR
+      p.nosotros__descripcion
+        |Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris a elit lacinia, blandit ex sagittis, auctor nibh. Donec a consectetur mauris. Cras vel imperdiet sem. Fusce quis laoreet erat, quis maximus felis. Phasellus suscipit volutpat porttitor. Maecenas bibendum dolor at lectus commodo, ac accumsan neque accumsan. Vestibulum eget lacinia felis. Aliquam erat volutpat. Sed velit ligula, sollicitudin in erat sed, porttitor commodo dolor.
+
+  // Seccion "Que es eventos CAMERSUR"
+  section.acerca
+    .container.py-5
+      .row
+        .col-md-8.col-lg-9
+          h1.cms-titulo.cms-titulo--verde ¿QUÉ ES EVENTOS CAMERSUR?
+          p.acerca__descripcion
+            |Nam vulputate odio in viverra porttitor. Phasellus odio lectus, ullamcorper sed dolor ut, aliquet laoreet diam. Suspendisse non ligula ornare, scelerisque neque vitae, varius diam. Nunc id diam bibendum, volutpat ligula ut, placerat neque. Vivamus consectetur, metus nec accumsan ullamcorper, nisi ipsum eleifend dolor, non convallis urna dui id metus. In posuere at ligula in maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus vehicula, fermentum diam at, sollicitudin quam. Donec semper metus metus, vitae blandit magna malesuada ac. Vestibulum non commodo lorem, quis auctor sapien. Integer porta diam sed metus suscipit, id ultrices arcu ullamcorper. Suspendisse pulvinar pretium tortor, et auctor urna tristique at. Aenean commodo, mi vel eleifend tincidunt, eros sem placerat nulla, sed convallis mauris dolor eget turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed consequat pulvinar diam vitae scelerisque.
+          p.acerca__descripcion
+            |Cras imperdiet nibh enim, a porta quam imperdiet nec. Pellentesque at quam metus. Fusce aliquam feugiat ultrices. Mauris vitae neque ornare, imperdiet eros eu, finibus eros. Phasellus consequat mi a mi ultrices scelerisque. Sed in libero quis felis vestibulum pulvinar eu id erat. Vivamus vel justo et tortor egestas fermentum a quis metus. Aliquam erat volutpat. Aliquam erat volutpat.
+          p.acerca__descripcion
+            |Nam vulputate odio in viverra porttitor. Phasellus odio lectus, ullamcorper sed dolor ut, aliquet laoreet diam. Suspendisse non ligula ornare, scelerisque neque vitae, varius diam. Nunc id diam bibendum, volutpat ligula ut, placerat neque. Vivamus consectetur, metus nec accumsan ullamcorper, nisi ipsum eleifend dolor, non convallis urna dui id metus. In posuere at ligula in maximus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel risus vehicula, fermentum diam at, sollicitudin quam. Donec semper metus metus, vitae blandit magna malesuada ac. Vestibulum non commodo lorem, quis auctor sapien. Integer porta diam sed metus suscipit, id ultrices arcu ullamcorper. Suspendisse pulvinar pretium tortor, et auctor urna tristique at. Aenean commodo, mi vel eleifend tincidunt, eros sem placerat nulla, sed convallis mauris dolor eget turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed consequat pulvinar diam vitae scelerisque.
+
+        .col-md-4.col-lg-3
+          // Newsletter
+          aside.newsletter-eventos.text-center
+            section.buscador
+              h4.buscador__titulo RECIBE LAS NOVEDADES
+              .buscador__bloque
+                form.buscador__form
+                  input.form-control(type="email", placeholder="DIRECCIÓN DE CORREO")
+
+                  button.buscador__boton(type="button") Suscribirme
+
+            a(href="#")
+              img(src="images/imagen-crear-un-evento.jpg", class="img-fluid")

@@ -112,19 +112,8 @@
   }
 
   &__menu {
-    flex-basis: 100%;
     padding: 1rem 0;
-    @include media(md) {
-      display: block;
-      flex-basis: 30%;
-      order: -1;
-    }
-    ul {
-      @include media(md) {
-        display: flex;
-        margin: 0;
-      }
-    }
+
     li {
       display: block;
       padding: 0.5rem 0;
@@ -135,21 +124,26 @@
     }
 
     a {
-      border-top: 1px solid $gris-empresas;
-			color: $azul-medio;
-			font-family: $montserrat-font;
+      //border-top: 1px solid $gris-empresas;
+      color: $azul-medio !important;
+      font-family: $montserrat-font;
       text-decoration: none;
       text-transform: uppercase;
       @include media(md) {
         border-top: 0;
         margin: 0 0.3rem;
-        padding: 0.8rem;
         border-bottom: 2px solid transparent;
         transition: all .5s ease;
       }
     }
     li.active a, a:hover {
       border-bottom: 2px solid;
+    }
+    //  Estilos para links dropdown
+    .dropdown-item {
+      font-size: 0.9rem;
+      margin: 0.5rem 0;
+      text-align: center;
     }
   }
 

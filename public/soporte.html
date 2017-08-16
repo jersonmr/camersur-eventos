@@ -50,60 +50,86 @@
         </div>
       </section>
     </header>
-    <section class="cmsuniversidad-publicidad d-none d-sm-block">
+    <section class="d-none d-sm-block">
       <div class="container text-center"><a href="http://www.camersur.com" target="_blank"><img class="img-fluid" src="images/Banner5.png" alt="Banner publicitario"></a></div>
     </section>
-    <section class="resultados my-5">
+    <section class="faq my-5">
       <div class="container">
-        <h1 class="cms-titulo cms-titulo--amarillo d-flex flex-column">EVENTOS ANTERIORES</h1>
-        <div class="resultados__listado">
-          <article class="resultados__item">
-            <div class="resultados__info">           
-              <div class="resultados__texto">
-                <h2 class="resultados__titulo"><a href="#">NOMBRE DEL EVETO</a></h2>
-                <p class="resultados__descripcion">Breve descripción del evento    </p>
-              </div>
+        <h1 class="cms-titulo cms-titulo--amarillo">SOPORTE</h1>
+        <p>Algún texto describiendo la función de la página de soporte</p>
+        <!-- Acordeon con preguntas frecuentes-->
+        <h2>PREGUNTAS FRECUENTES</h2>
+        <div id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="card">
+            <div class="card-header active" role="tab">
+              <h5 class="mb-0"><a data-toggle="collapse" data-parent="#accordion" href="#faq1">¿TEXTO DE LA PREGUNTA NÚMERO 1?</a></h5>
             </div>
-            <div class="resultados__boton"><a href="#">VER MÁS        </a></div>
-          </article>
-          <div class="resultados__data">
-            <h4 class="resultados__direccion">DIRECCIÓN DEL EVENTO</h4><span class="resultados__fecha">12/05/2017 09:00 AM            </span>
+            <div class="collapse show" id="faq1" role="tabpanel">
+              <div class="card-block">Texto de la respuesta correspondiente a la pregunta número 1. Texto de la respuesta correspondiente a la pregunta número 1. Texto de la respuesta correspondiente a la pregunta número 1.</div>
+            </div>
           </div>
-          <article class="resultados__item">
-            <div class="resultados__info">           
-              <div class="resultados__texto">
-                <h2 class="resultados__titulo"><a href="#">NOMBRE DEL EVETO</a></h2>
-                <p class="resultados__descripcion">Breve descripción del evento    </p>
-              </div>
+          <div class="card">
+            <div class="card-header" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq2">¿TEXTO DE LA PREGUNTA NÚMERO 2?</a></h5>
             </div>
-            <div class="resultados__boton"><a href="#">VER MÁS        </a></div>
-          </article>
-          <div class="resultados__data">
-            <h4 class="resultados__direccion">DIRECCIÓN DEL EVENTO</h4><span class="resultados__fecha">12/05/2017 09:00 AM            </span>
+            <div class="collapse" id="faq2" role="tabpanel">
+              <div class="card-block">Texto de la respuesta correspondiente a la pregunta número 2. Texto de la respuesta correspondiente a la pregunta número 2. Texto de la respuesta correspondiente a la pregunta número 2.</div>
+            </div>
           </div>
-          <article class="resultados__item">
-            <div class="resultados__info">           
-              <div class="resultados__texto">
-                <h2 class="resultados__titulo"><a href="#">NOMBRE DEL EVETO</a></h2>
-                <p class="resultados__descripcion">Breve descripción del evento    </p>
-              </div>
+          <div class="card">
+            <div class="card-header" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq3">¿TEXTO DE LA PREGUNTA NÚMERO 3?</a></h5>
             </div>
-            <div class="resultados__boton"><a href="#">VER MÁS        </a></div>
-          </article>
-          <div class="resultados__data">
-            <h4 class="resultados__direccion">DIRECCIÓN DEL EVENTO</h4><span class="resultados__fecha">12/05/2017 09:00 AM            </span>
+            <div class="collapse" id="faq3" role="tabpanel">
+              <div class="card-block">Texto de la respuesta correspondiente a la pregunta número 3. Texto de la respuesta correspondiente a la pregunta número 3. Texto de la respuesta correspondiente a la pregunta número 3.</div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" role="tab">
+              <h5 class="mb-0"><a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#faq4">¿TEXTO DE LA PREGUNTA NÚMERO 4?</a></h5>
+            </div>
+            <div class="collapse" id="faq4" role="tabpanel">
+              <div class="card-block">Texto de la respuesta correspondiente a la pregunta número 4. Texto de la respuesta correspondiente a la pregunta número 4. Texto de la respuesta correspondiente a la pregunta número 4.</div>
+            </div>
           </div>
         </div>
-        <div class="resultados__paginacion d-flex justify-content-center my-3">
-          <nav aria-label="Paginacion">
-            <ul class="pagination">
-              <li class="page-item"><a class="page-link" href="#" aria-label="Prev"><span aria-hidden="true">«</span><span class="sr-only">Prev</span></a></li>
-              <li class="page-item"><a class="page-link" href="#">1</a></li>
-              <li class="page-item"><a class="page-link" href="#">2</a></li>
-              <li class="page-item"><a class="page-link" href="#">3</a></li>
-              <li class="page-item"><a class="page-link" href="#" aria-label="Next"><span aria-hidden="true">»</span><span class="sr-only">Next</span></a></li>
-            </ul>
-          </nav>
+      </div>
+    </section>
+    <section class="contacto py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <h2 class="contacto__subtitulo">¿AÚN TIENES PREGUNTAS?</h2>
+            <h1 class="contacto__subtitulo--dudas">Envíanos tus dudas <span>Y TE AYUDAREMOS</span></h1>
+            <p class="contacto__descripcion">También puedes contactarnos a través de los canales de comunicación que tenemos disponibles para ti:</p>
+            <div class="contacto__datos">
+              <p><i class="fa fa-envelope-o"> </i>info@camersur.com</p>
+              <p><i class="fa fa-mobile"> </i>954-687-0025</p>
+            </div>
+            <div class="contacto__redes"><a href="#"><i class="fa fa-facebook-square"></i></a><a href=""><i class="fa fa-instagram"></i></a><a href=""><i class="fa fa-twitter-square"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a><a href="#"><i class="fa fa-rss-square"></i></a></div>
+          </div>
+          <div class="col-sm-6">
+            <form>
+              <div class="form-group">
+                <input class="form-control" type="text" name="nombre" placeholder="Nombres">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="apellido" placeholder="Apellidos">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Correo electrónico">
+              </div>
+              <div class="form-group">
+                <input class="form-control" type="text" name="asunto" placeholder="Asunto">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="mensaje" cols="30" rows="10"></textarea>
+              </div>
+              <div class="form-group">
+                <input class="btn-block" type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
@@ -147,5 +173,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.card-header').on('click', 'a', function() {        
+          $('.card-header.active').removeClass('active');        
+          $(this).parent().closest('.card-header').addClass('active');                
+        });      
+      });
+    </script>
   </body>
 </html>
