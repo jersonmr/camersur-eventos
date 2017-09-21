@@ -7,6 +7,9 @@
     margin: -0.5rem auto 1rem 2rem;
     text-transform: uppercase;
   }
+  &__img {
+    min-width: 100%;
+  }
   p {
     font-family: $montserrat-font;
     font-size: em(16);
